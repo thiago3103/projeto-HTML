@@ -10,7 +10,7 @@
   --stroke-color: rgba(255, 255, 255, 0.5);
   --surface-color: rgba(255, 255, 255, 0.05);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
-  --highlight-color: rgba(0, 0, 0, 0.5 );
+  --highlight-color: rgba(0, 0, 0, 0.5);
   --switch-bg-url: url(./assets/moon-stars.svg);
 }
 
@@ -34,7 +34,7 @@ body * {
   color: var(--text-color);
 }
 
-#container{
+#container {
   width: 100%;
   max-width: 588px;
   margin: 56px auto 0px;
@@ -47,7 +47,7 @@ body * {
   padding: 24px;
 }
 
-#profile img{
+#profile img {
   width: 112px;
 }
 
@@ -79,7 +79,7 @@ body * {
   transform: translateY(-50%);
 }
 
-.light #switch button{
+.light #switch button {
   animation: slide-in 0.2s forwards;
 }
 
@@ -101,7 +101,7 @@ body * {
 
 
 /* links */
-ul{
+ul {
   list-style: none;
 
   display: flex;
@@ -138,7 +138,7 @@ ul li a:hover {
 }
 
 /* social-links */
-#social-links{
+#social-links {
   display: flex;
   justify-content: center;
 
@@ -146,8 +146,8 @@ ul li a:hover {
 
   font-size: 24px;
 }
- 
-#social-links a{
+
+#social-links a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -177,7 +177,8 @@ footer {
   .light {
     --bg-url: url(./assets/bg-desktop-light.jpg);
   }
- 
+
+  /* animation */
   @keyframes slide-in {
     from {
       left: 0;
@@ -188,4 +189,13 @@ footer {
     }
   }
 
+  @keyframes slide-back {
+    from {
+      left: 50%;
+    }
+
+    to {
+      left: 0;
+    }
+  }
 }
