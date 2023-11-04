@@ -6,17 +6,17 @@
 
 :root {
   --text-color: white;
-  --bg-url: url(./assets/bg-desktop.png);
+  --bg-url: url(./assets/bg-mobile.jpg);
   --stroke-color: rgba(255, 255, 255, 0.5);
   --surface-color: rgba(255, 255, 255, 0.05);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
-  --highlight-color: rgba(0, 0, 0, 0.5);
+  --highlight-color: rgba(255, 255, 255, 0.2);
   --switch-bg-url: url(./assets/moon-stars.svg);
 }
 
 .light {
   --text-color: black;
-  --bg-url: url(./assets/lofi.jpg);
+  --bg-url: url(./assets/bg-mobile-light.jpg);
   --stroke-color: rgba(0, 0, 0, 0.5);
   --surface-color: rgba(0, 0, 0, 0.05);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
@@ -77,6 +77,8 @@ body * {
   top: 50%;
   z-index: 1;
   transform: translateY(-50%);
+
+  animation: slide-back 0.2s;
 }
 
 .light #switch button {
@@ -167,8 +169,7 @@ footer {
   font-size: 14px;
 }
 
-/*  */
-
+/* media queries */
 @media (min-width: 700px) {
   :root {
     --bg-url: url(./assets/bg-desktop.jpg);
@@ -177,6 +178,7 @@ footer {
   .light {
     --bg-url: url(./assets/bg-desktop-light.jpg);
   }
+}
 
   /* animation */
   @keyframes slide-in {
@@ -198,4 +200,3 @@ footer {
       left: 0;
     }
   }
-}
